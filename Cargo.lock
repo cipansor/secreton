@@ -4978,7 +4978,7 @@ dependencies = [
  "argon2",
  "async-trait",
  "base32",
- "base64 0.22.1",
+ "base64 0.23.1",
  "chrono",
  "futures",
  "glob",
@@ -5013,7 +5013,7 @@ name = "secreton-cli"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "base64 0.22.1",
+ "base64 0.23.1",
  "clap",
  "clap_complete",
  "comfy-table",
@@ -5053,7 +5053,7 @@ dependencies = [
  "anyhow",
  "argon2",
  "async-trait",
- "base64 0.22.1",
+ "base64 0.23.1",
  "blake3",
  "chacha20poly1305",
  "chrono",
@@ -5112,7 +5112,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "base32",
- "base64 0.22.1",
+ "base64 0.23.1",
  "chrono",
  "deadpool-postgres",
  "ed25519-dalek 3.0.0",
@@ -5161,7 +5161,7 @@ dependencies = [
  "axum",
  "axum-extra",
  "axum-test",
- "base64 0.22.1",
+ "base64 0.23.1",
  "chrono",
  "clap",
  "futures",
@@ -5211,7 +5211,7 @@ name = "secreton-storage"
 version = "0.1.0"
 dependencies = [
  "async-trait",
- "base64 0.22.1",
+ "base64 0.23.1",
  "chrono",
  "deadpool-postgres",
  "futures",
