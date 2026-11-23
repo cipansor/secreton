@@ -84,14 +84,6 @@ ignore = [
     # excludes RSA.
     "RUSTSEC-2023-0071",
     { id = "RUSTSEC-2024-0436", reason = "paste is unmaintained; pulled in by leptos, not directly. It is a proc-macro, so it runs at build time and ships no code. Revisit when leptos moves off it." },
-    # RUSTSEC-2025-0134 — rustls-pemfile is unmaintained.
-    #
-    # Not a vulnerability: the crate is archived, and its own advisory notes that the last
-    # release is a thin wrapper around code that now lives in rustls-pki-types. It arrives
-    # via mysql_async, so nothing here can drop it while the `mysql` feature exists — and
-    # that feature is off by default, so a stock build does not contain it at all. Revisit
-    # when mysql_async migrates to `rustls_pki_types::PemObject`.
-    { id = "RUSTSEC-2025-0134", reason = "unmaintained (not vulnerable); transitive through mysql_async, which sits behind an off-by-default feature" },
     # RUSTSEC-2026-0173 — proc-macro-error2 is unmaintained.
     #
     # A proc-macro crate reached only through `leptos_macro`, so it runs at build time and
